@@ -1,4 +1,4 @@
-def count_words(filename):
+def count_words(filename: str) -> dict[str, int]:
     with open(filename, "r") as f:
         text = f.read()
     words = text.split()
